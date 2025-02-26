@@ -19,7 +19,4 @@ travis-ci = { repository = "alexcrichton/wait-timeout" }
 appveyor = { repository = "alexcrichton/wait-timeout" }
 
 [target.'cfg(unix)'.dependencies]
-libc = "0.2.56"
-
-[patch.crates-io]
-libc = { git = "https://github.com/xingxue-ibm/libc", branch = "modified-0.2.169" }
+libc = { git = "https://github.com/rust-lang/libc" }
